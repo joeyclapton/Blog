@@ -4,6 +4,7 @@ module.exports = {
     description: `A blog about programming, philosophy, life style, wine, beer and other stuffs...
     `,
     author: `@joeyclapton`,
+    position: 'Front-end Developer',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
