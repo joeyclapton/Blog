@@ -1,20 +1,17 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+
 import Profile from '../Profile/profile'
+import S from './layout.style'
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <S.LayoutWrapper>
       <aside>
         <Profile />
       </aside>
-      <main></main>
-    </>
+      <S.LayoutMain></S.LayoutMain>
+    </S.LayoutWrapper>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout
