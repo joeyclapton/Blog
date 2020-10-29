@@ -7,6 +7,7 @@ module.exports = {
     position: 'Front-end Developer',
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
