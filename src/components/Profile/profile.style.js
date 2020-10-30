@@ -3,27 +3,28 @@ import { Link } from 'gatsby'
 
 const styles = {
   ProfileWrapper: styled.section`
-    color: #8899a6;
+    color: #fbfcfe;
     display: flex;
     flex-direction: column;
   `,
   ProfileLink: styled(Link)`
-    color: #8899a6;
+    color: #fbfcfe;
     text-decoration: none;
     transition: color 0.5s;
 
     &:hover {
-      color: #1fa1f2;
+      color: #fec107;
     }
   `,
   ProfileAuthor: styled.h1`
-    font-size: 1.1.rem;
+    font-size: 1.1rem;
     margin: 0.5rem auto 1.5rem;
   `,
   ProfilePosition: styled.small`
     display: block;
     font-size: 1.2rem;
     font-weight: 300;
+    margin-top: 0.5rem;
   `,
   ProfileDescription: styled.p`
     font-size: 1rem;

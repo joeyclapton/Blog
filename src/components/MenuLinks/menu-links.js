@@ -6,7 +6,11 @@ import S from './menu-links.style'
 
 const getLinks = () =>
   links.map((link, index) => {
-    return <S.MenuLinksLink to={link.url}>{link.label}</S.MenuLinksLink>
+    return (
+      <S.MenuLinksLink to={link.url} activeClassName="active">
+        {link.label}
+      </S.MenuLinksLink>
+    )
   })
 
 const MenuLinks = () => (

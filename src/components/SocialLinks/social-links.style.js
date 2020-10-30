@@ -13,12 +13,12 @@ const styles = {
   `,
   SocialLinksItem: styled.li``,
   SocialLinksLink: styled.a`
-    color: #8899a6;
+    color: #fbfcfe;
     text-decoration: none;
     transition: color 0.5s;
 
     &:hover {
-      color: #afa1f2;
+      color: #fec107;
     }
   `,
   IconWrapper: styled.div`

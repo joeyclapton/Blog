@@ -4,6 +4,8 @@ import { Link } from 'gatsby'
 const styles = {
   MenuLinksWrapper: styled.nav``,
   MenuLinksList: styled.ul`
+    display: flex;
+    flex-direction: column;
     font-size: 1.2rem;
     font-weight: 300;
   `,
@@ -11,12 +13,14 @@ const styles = {
     padding: 0.5rem 0;
   `,
   MenuLinksLink: styled(Link)`
-    color: #8899a6;
+    color: #fbfcfe;
+    margin: 8px 0;
+    padding: 8px 0;
     text-decoration: none;
     transition: color 0.4s;
 
     &:hover {
-      color: #1fa1f2;
+      color: #fec107;
     }
   `,
 }
