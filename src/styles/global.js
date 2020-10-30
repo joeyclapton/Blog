@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500;1,300;1,400&family=Source+Code+Pro:wght@600;700&display=swap');
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -50,14 +51,21 @@ table {
 	border-spacing: 0;
 }
 body {
-    background: #16202c;
+    background: #30353b;
     line-height: 1;
     font-size: 100%;
+}
+*{
+	// font-family: 'Bitter', serif !important; 
+	font-family: 'Source Code Pro', monospace !important;
 }
 img {
     display: block;
     width: 100%;
     height: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Source Code Pro', monospace !important;
 }
 `
 export default GlobalStyles
