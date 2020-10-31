@@ -1,20 +1,24 @@
 import React from 'react'
-
 import S from './post-item.style'
 
-const PostItem = () => (
-  <S.PostItemLink>
+const PostItem = ({
+  slug,
+  background,
+  category,
+  date,
+  timeToRead,
+  title,
+  description,
+}) => (
+  <S.PostItemLink to={slug}>
     <S.PostItemWrapper>
-      <S.PostItemTag background="#47650b">Misc</S.PostItemTag>
+      <S.PostItemTag background={background}>{category}</S.PostItemTag>
       <S.PostItemInfo>
-        <S.PostItemDate>10 de Agosto de 2020 • 4 min de leitura</S.PostItemDate>
-        <S.PostItemTitle>
-          Mostrando últimos posts e vídeos no Github Profile
-        </S.PostItemTitle>
-        <S.PostItemDescription>
-          Como utilizar o Github Actions para manter seu profile atualizado e
-          bonito.
-        </S.PostItemDescription>
+        <S.PostItemDate>
+          {date} • {timeToRead} de leitura
+        </S.PostItemDate>
+        <S.PostItemTitle>{title}</S.PostItemTitle>
+        <S.PostItemDescription>{description}</S.PostItemDescription>
       </S.PostItemInfo>
     </S.PostItemWrapper>
   </S.PostItemLink>
