@@ -1,10 +1,18 @@
 import React from 'react'
 import S from './post-item.style'
 
-const PostItem = ({ slug, category, date, timeToRead, title, description }) => (
+const PostItem = ({
+  slug,
+  background,
+  category,
+  date,
+  timeToRead,
+  title,
+  description,
+}) => (
   <S.PostItemLink to={slug}>
     <S.PostItemWrapper>
-      <S.PostItemTag background="#47650b">{category}</S.PostItemTag>
+      <S.PostItemTag background={background}>{category}</S.PostItemTag>
       <S.PostItemInfo>
         <S.PostItemDate>
           {date} • {timeToRead} de leitura
