@@ -13,7 +13,7 @@ const styles = {
     padding: 0.5rem 0;
   `,
   MenuLinksLink: styled(Link)`
-    color: #fbfcfe;
+    color: rgb(251 252 254 / 0.66);
     margin: 8px 0;
     padding: 8px 0;
     text-decoration: none;

@@ -3,12 +3,12 @@ import { Link } from 'gatsby'
 
 const styles = {
   ProfileWrapper: styled.section`
-    color: #fbfcfe;
+    color: rgb(251 252 254 / 0.66);
     display: flex;
     flex-direction: column;
   `,
   ProfileLink: styled(Link)`
-    color: #fbfcfe;
+    color: rgb(251 252 254 / 0.66);
     text-decoration: none;
     transition: color 0.5s;
 
