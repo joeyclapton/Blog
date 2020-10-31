@@ -7,7 +7,7 @@ const styles = {
   LayoutMain: styled.main`
     background-color: #16202c;
     min-height: 100vh;
-    padding: 0 3.75rem, 0 20rem;
+    padding: 0 3.75rem 0 23rem;
     width: 100%;
   `,
 }
