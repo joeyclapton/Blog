@@ -2,10 +2,12 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 const styles = {
-  PostItemLink: styled(Link)`
+  PostItemLink: styled.a`
     color: #fbfcfe;
+    cursor: pointer;
     display: flex;
     text-decoration: none;
+    transition: 0.4s;
 
     &:hover {
       color: #fec107;
@@ -20,7 +22,7 @@ const styles = {
   `,
   PostItemTag: styled.div`
     align-items: center;
-    background: black;
+    background: ${props => props.background};
     border-radius: 50%;
     color: #fff;
     display: flex;
@@ -39,16 +41,16 @@ const styles = {
   PostItemDate: styled.time`
     font-size: 1rem;
   `,
-    PostItemTitle = styled.h1`
+  PostItemTitle: styled.h1`
     font-size: 1.6rem;
     font-weight: 700;
-    margin: .2rem 0 .5rem;
+    margin: 1rem 0;
   `,
-    PostItemDescription: styled.p`
-        font-size: 1.2rem;
-        font-weight: 300;
-        line-height: 1.2;
-    `
+  PostItemDescription: styled.p`
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.2;
+  `,
 }
 
 export default styles
